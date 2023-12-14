@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>open-modal</title>
+</head>
+<body class="bg-blue-800  h-screen">
+   <div class="relative">
+    <div class="flex justify-end pr-8 py-8 px-8">
+        <button class="py-2 px-4 font-bold rounded-lg bg-white  text-blue-800 hover:border-2 hover:bg-blue-800 :border-blue-800 hover:text-white" id="openbtn">Open Todo</button>
+       </div>
+        <div class="flex justify-center items-center hidden " id="modal">
+            <div class="lg:w-[500px] h-[70vh] bg-white rounded-lg lg:px-8 px-4 py-8  overflow-hidden" >
+                <div class="flex justify-between"> <h2 class="flex items-center gap-4 mb-8 text-3xl font-bold">list of Todos</h2>
+                    <span class="text-2xl text-black cursor-pointer hover:bg-gray-300 hover:h-10 hover:w-10 hover:rounded-full hover:flex hover:justify-center hover:items-center" id="closebtn"><i class='bx bx-x'></i></span></div>
+              <ul id="todolist" class="overflow-y-auto  max-h-[300px]">
+               <li>Todo 1</li>
+               <li>Todo 2</li>
+               <li>Todo 3</li>
+               <li>Todo 4</li>
+               <li>Todo 5</li>
+               <li>Todo 6</li>
+               <li>Todo 7</li>
+                
+              </ul>
+                </div>
+        </div>
+   </div>
+    <script src="/script.js"></script>
+ </body>
+</html>
